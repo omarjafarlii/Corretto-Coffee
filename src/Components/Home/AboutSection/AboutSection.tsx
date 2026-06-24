@@ -2,7 +2,6 @@ import backgroundAbout from "../../../assets/aboutBackground.svg";
 import technologyImg from "../../../assets/newTechnology.svg";
 import staffImg from "../../../assets/staff.svg";
 import freshImg from "../../../assets/freshcoffee.svg";
-import { FaCaretRight } from "react-icons/fa6";
 import AboutCard from "./AboutCard";
 
 export interface AboutItem {
