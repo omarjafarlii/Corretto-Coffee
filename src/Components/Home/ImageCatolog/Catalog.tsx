@@ -31,10 +31,17 @@ const Catalog = () => {
           </div>
         ))}
       </div>
-      <div className="md:mt-[86px] md:mb-[54px] grid grid-cols-1 md:grid-cols-5 gap-5 items-center mx-auto w-full">
-        {companyLogos.map((logo, index) => (
-          <img src={logo} key={index} alt="Img" className="mx-auto" />
-        ))}
+      <div className="overflow-hidden md:mt-[86px] md:mb-[54px] w-full">
+        <div className="flex animate-scroll gap-5 w-max">
+          {[...companyLogos, ...companyLogos].map((logo, index) => (
+            <img
+              src={logo}
+              key={index}
+              alt="Img"
+              className="h-auto w-auto flex-shrink-0"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
