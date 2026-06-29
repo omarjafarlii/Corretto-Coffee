@@ -21,22 +21,19 @@ const Catalog = () => {
     <div className="wrapper mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-4 items-center gap-10 my-[79px]">
         {img.map((item, index) => (
-          <img
-            src={item}
-            key={index}
-            alt="Img"
-            className={index >= 2 ? "hidden md:block" : "block"}
-          />
+          <div className="group cursor-pointer">
+            <img
+              src={item}
+              key={index}
+              alt="Img"
+              className={`${index >= 2 ? "hidden md:block" : "block"} hover:scale-110 transition-all duration-600`}
+            />
+          </div>
         ))}
       </div>
       <div className="md:mt-[86px] md:mb-[54px] grid grid-cols-1 md:grid-cols-5 gap-5 items-center mx-auto w-full">
         {companyLogos.map((logo, index) => (
-          <img
-            src={logo}
-            key={index}
-            alt="Img"
-            className="mx-auto"
-          />
+          <img src={logo} key={index} alt="Img" className="mx-auto" />
         ))}
       </div>
     </div>

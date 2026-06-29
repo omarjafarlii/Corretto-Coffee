@@ -22,16 +22,16 @@ const Header = () => {
             />
           </div>
           <ul className="uppercase items-center gap-8 md:flex hidden">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">about us</li>
-            <li className="cursor-pointer">services</li>
-            <li className="cursor-pointer">blog</li>
-            <li className="cursor-pointer">shop</li>
-            <li className="cursor-pointer">contact us</li>
-            <li className="cursor-pointer">
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">Home</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">about us</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">services</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">blog</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">shop</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">contact us</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">
               <FaCartShopping />
             </li>
-            <li className="cursor-pointer">
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">
               <FaSearch />
             </li>
           </ul>

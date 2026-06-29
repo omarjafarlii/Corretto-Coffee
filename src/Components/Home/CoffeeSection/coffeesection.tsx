@@ -1,4 +1,5 @@
 import coffebg from "../../../assets/coffeeBackgroundIMG.svg";
+import SliderLogo from "../../../assets/slider-logo.svg";
 
 export interface StatItem {
   id: number;
@@ -37,19 +38,34 @@ export const statsData: StatItem[] = [
 const Coffeesection = () => {
   return (
     <div>
-      <img src={coffebg} alt="coffeebg" className="w-full mt-[71px]" />
+      <div className="relative mt-[71px]">
+        <img
+          src={coffebg}
+          alt="coffeebg"
+          className="w-full h-screen object-cover"
+        />
+
+        <div className="absolute inset-0 flex items-start justify-center mt-[58px]">
+          <img
+            src={SliderLogo}
+            alt="SliderLogo"
+            className="md:max-w-[178px] max-w-[42px] w-full object-cover"
+          />
+        </div>
+      </div>
       <div className="my-[79px] md:my-[145px] wrapper mx-auto md:flex items-center justify-between flex-row">
         {statsData.map((item: StatItem, index) => (
-          <div key={index} className="md:max-w-[300px] w-full flex items-center flex-col justify-center text-center my-10 md:my-0">
+          <div
+            key={index}
+            className="md:max-w-[300px] w-full flex items-center flex-col justify-center text-center my-10 md:my-0"
+          >
             <span className='text-[35px] text-[#945F51] font-["Marko_One"]'>
               {item.count}
             </span>
             <p className='uppercase text-[20px] font-["Marko_One"]'>
               {item.title}
             </p>
-            <p className='font-["Inter"] text-sm'>
-              {item.description}
-            </p>
+            <p className='font-["Inter"] text-sm'>{item.description}</p>
           </div>
         ))}
       </div>

@@ -44,13 +44,13 @@ const Footer = () => {
             <div className="flex items-start justify-between md:w-[30%] w-full">
               <ul className="font-['Marko_One'] uppercase text-white pt-[49px]">
                 <li className="pb-7">address</li>
-                <li className="cursor-pointer">11/1,enasalmada,</li>
-                <li className="cursor-pointer">ovilikanda</li>
-                <li className="cursor-pointer">matale</li>
+                <li className="cursor-pointer hover:text-gray-400 transition duration-300">11/1,enasalmada,</li>
+                <li className="cursor-pointer hover:text-gray-400 transition duration-300">ovilikanda</li>
+                <li className="cursor-pointer hover:text-gray-400 transition duration-300">matale</li>
               </ul>
               <ul className="font-['Marko_One'] uppercase text-white pt-[49px]">
                 <li className="pb-7">phone number</li>
-                <li className="cursor-pointer">+94 714319533</li>
+                <li className="cursor-pointer hover:text-gray-400 transition duration-300">+94 714319533</li>
               </ul>
             </div>
           </div>
@@ -62,18 +62,18 @@ const Footer = () => {
             &copy; 2025 All right reserved
           </span>
           <ul className="flex items-center md:flex-row flex-col gap-8 uppercase text-[12px] md:text-base">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Contact Us</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">Home</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">About</li>
+            <li className="cursor-pointer hover:text-gray-400 transition duration-300">Contact Us</li>
           </ul>
           <ul className="flex items-center gap-4">
-            <li>
+            <li className="hover:text-gray-400 transition duration-300">
               <FaFacebookSquare size={20} className="cursor-pointer" />
             </li>
-            <li>
+            <li className="hover:text-gray-400 transition duration-300">
               <FaInstagram size={20} className="cursor-pointer" />
             </li>
-            <li>
+            <li className="hover:text-gray-400 transition duration-300">
               <FaTwitter size={20} className="cursor-pointer" />
             </li>
           </ul>

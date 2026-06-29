@@ -58,13 +58,24 @@ const CoffeeShopSection = () => {
             </div>
             <div className="pt-[79px] flex flex-col md:flex-row gap-5 justify-between mx-auto w-full!">
               {ProductsData.map((item: ProductsType, index: number) => (
-                <div key={index} className="w-full cursor-pointer md:max-w-[300px] flex flex-col items-center justify-center">
-                  <img src={item.img} alt="technology image" />
+                <div
+                  key={index}
+                  className="w-full cursor-pointer md:max-w-[300px] flex flex-col items-center justify-center cursor-pointer group p-4"
+                >
+                  <div className="overflow-hidden">
+                    <img
+                      src={item.img}
+                      alt="technology image"
+                      className="group-hover:scale-110 transition-all duration-600"
+                    />
+                  </div>
                   <div className="flex flex-col items-center gap-2 md:gap-4 pt-3 md:pt-6 items-center justify-center">
                     <h4 className="uppercase text-[20px] md:text-[23px] text-[#311008] font-['Marko_One']">
                       {item.title}
                     </h4>
-                    <p className="text-[18px] text-[#AA7B6F]! font-['Marko_One']">LKR {item.price}</p>
+                    <p className="text-[18px] text-[#AA7B6F]! font-['Marko_One']">
+                      LKR {item.price}
+                    </p>
                   </div>
                 </div>
               ))}
